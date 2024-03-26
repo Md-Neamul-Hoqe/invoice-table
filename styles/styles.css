@@ -6,13 +6,16 @@
   margin: 0;
 }
 
-html {
-  height: 420px !important;
-  /* overflow: hidden; */
-}
 /* primery color */
 :root {
   --blue: #053858;
+}
+
+/**
+  * Layout styles
+  * */
+html {
+  height: 420px !important;
 }
 
 body {
@@ -20,11 +23,13 @@ body {
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
 
-  max-width: 50%;
+  /* for nice view only */
+  max-width: 556px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* smaller width than footer */
 header,
 main {
   padding: 0 40px;
@@ -33,14 +38,18 @@ main {
 html,
 body,
 table {
-  /* height: 420px; */
   width: 100%;
   font-size: 0.75rem;
-  font-family: "Fira Sans", sans-serif;
   color: #111118;
   font-weight: 400;
 }
 
+/**
+  * General Styles
+  * */
+.font-sans {
+  font-family: "Fira Sans", sans-serif;
+}
 .font-mono {
   font-family: "Fira Mono", monospace;
 }
@@ -51,10 +60,6 @@ table {
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.opacity-90 {
-  opacity: 0.9;
 }
 
 .bold {
@@ -73,17 +78,31 @@ table {
   text-transform: capitalize;
 }
 
-.gap {
-  height: 10px;
-}
-
-#big-footer,
 .text-14 {
   font-size: 0.875rem;
 }
 
 .text-10 {
   font-size: 0.625rem;
+}
+
+/**
+  * Component styles
+  * */
+
+/* gap in between tables */
+.gap {
+  height: 10px;
+}
+
+/* horizontal line */
+.hr {
+  height: 15px;
+}
+
+/* big footer last column content hidden */
+.col-gap {
+  visibility: hidden;
 }
 
 /* Invoice Styles */
@@ -117,16 +136,6 @@ td {
 
 #details td {
   line-height: 2;
-}
-
-/* horizontal line */
-.hr {
-  height: 15px;
-}
-
-/* big footer last column content hidden */
-.col-gap {
-  visibility: hidden;
 }
 
 /* Footer primery color implement */

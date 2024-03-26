@@ -15,7 +15,7 @@
         <!-- Header section -->
 
         <header>
-            <Table>
+            <Table class="font-sans">
                 <thead>
                     <tr>
                         <th class="invoice bold" colspan="3">Invoice</th>
@@ -53,31 +53,31 @@
         <!-- main invoice section -->
         <main>
             <!-- Invoice Header [Account] -->
-            <Table>
+            <Table class="font-mono">
                 <thead>
                     <tr>
-                        <th class="font-mono opacity-70 uppercase" colspan="3">Bill to</th>
-                        <th class="font-mono opacity-70 uppercase" colspan="3">Bill from</th>
+                        <th class="opacity-70 uppercase" colspan="3">Bill to</th>
+                        <th class="opacity-70 uppercase" colspan="3">Bill from</th>
                     </tr>
                     <tr>
-                        <th class="bold capitalise text-14" colspan="3">David Bailey</th>
-                        <th class="bold capitalise text-14" colspan="3">ABC Solutions Ltd.</th>
+                        <th class="font-sans bold capitalise text-14" colspan="3">David Bailey</th>
+                        <th class="font-sans bold capitalise text-14" colspan="3">ABC Solutions Ltd.</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="">
                     <tr>
-                        <td colspan="3" class="font-mono opacity-70">4517 Washington Ave, <br>
+                        <td colspan="3" class="opacity-70">4517 Washington Ave, <br>
                             Manchester Kentucky 39495</td>
-                        <td colspan="3" class="font-mono opacity-70">4517 Washington Ave. Manchester <br> Kentucky 39495
+                        <td colspan="3" class="opacity-70">4517 Washington Ave. Manchester <br> Kentucky 39495
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="font-mono opacity-70">david@gmail.com</td>
-                        <td colspan="3" class="font-mono opacity-70">abc@gmail.com</td>
+                        <td colspan="3" class="opacity-70">david@gmail.com</td>
+                        <td colspan="3" class="opacity-70">abc@gmail.com</td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="font-mono opacity-90">+62 21 123456</td>
-                        <td colspan="3" class="font-mono opacity-90">+62 853 1234 5678</td>
+                        <td colspan="3" class="semibold">+62 21 123456</td>
+                        <td colspan="3" class="semibold">+62 853 1234 5678</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -89,9 +89,9 @@
 
             <!-- Invoice Details -->
             <Table id="details">
-                <thead>
+                <thead class="font-sans">
                     <tr>
-                        <th class="semibold capitalise" colspan="2">Item Details</th>
+                        <th class="semibold capitalise" colspan="2">Item Description</th>
                         <th class="semibold capitalise">Quantity</th>
                         <th class="semibold capitalise">Unit Price</th>
                         <th class="semibold capitalise">Total</th>
@@ -102,36 +102,36 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="font-mono opacity-70">
                     <tr>
-                        <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                        <td class="font-mono opacity-70">2</td>
-                        <td class="font-mono opacity-70">$200.00</td>
-                        <td class="font-mono opacity-70">$200.00</td>
+                        <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                        <td>2</td>
+                        <td>$200.00</td>
+                        <td>$200.00</td>
                     </tr>
                     <tr>
-                        <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                        <td class="font-mono opacity-70">1</td>
-                        <td class="font-mono opacity-70">$200.00</td>
-                        <td class="font-mono opacity-70">$200.00</td>
+                        <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                        <td>1</td>
+                        <td>$200.00</td>
+                        <td>$200.00</td>
                     </tr>
                     <tr>
-                        <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                        <td class="font-mono opacity-70">2</td>
-                        <td class="font-mono opacity-70">$200.00</td>
-                        <td class="font-mono opacity-70">$200.00</td>
+                        <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                        <td>2</td>
+                        <td>$200.00</td>
+                        <td>$200.00</td>
                     </tr>
                     <tr>
-                        <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                        <td class="font-mono opacity-70">1</td>
-                        <td class="font-mono opacity-70">$200.00</td>
-                        <td class="font-mono opacity-70">$200.00</td>
+                        <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                        <td>1</td>
+                        <td>$200.00</td>
+                        <td>$200.00</td>
                     </tr>
                     <tr>
-                        <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                        <td class="font-mono opacity-70">1</td>
-                        <td class="font-mono opacity-70">$200.00</td>
-                        <td class="font-mono opacity-70">$200.00</td>
+                        <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                        <td>1</td>
+                        <td>$200.00</td>
+                        <td>$200.00</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -142,7 +142,7 @@
             </Table>
 
             <!-- Invoice big footer -->
-            <Table id="big-footer">
+            <Table id="big-footer" class="font-sans text-14">
                 <thead>
                     <tr>
                         <th class="bold capitalise" colspan="3">Additional Information</th>
@@ -192,16 +192,16 @@
                     </tr>
                     <tr>
                         <td colspan="3" class="sign"><img src="/assets/sign.svg" alt="sign"></td>
-                        <td colspan="3" class=" bg-blue"><button class="pay-btn uppercase bold">Pay Now
+                        <td colspan="3" class="bg-blue"><button class="pay-btn uppercase bold">Pay Now
                                 $1,680.00</button>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="text-blue">Khalid Istiaq</td>
+                        <td colspan="3" class="text-blue bold">Khalid Istiaq</td>
                         <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td colspan="3">UX Designer, BemGroup</td>
+                        <td colspan="3" class="semibold">UX Designer, BemGroup</td>
                         <td colspan="3"></td>
                     </tr>
                 </tfoot>
