@@ -7,8 +7,8 @@
 }
 
 html {
-  /* height: 792px; */
   height: 420px !important;
+  /* overflow: hidden; */
 }
 /* primery color */
 :root {
@@ -19,6 +19,10 @@ body {
   /* change browsers default settings */
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
+
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header,
@@ -31,16 +35,10 @@ body,
 table {
   /* height: 420px; */
   width: 100%;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Fira Sans", sans-serif;
   color: #111118;
   font-weight: 400;
-}
-
-table {
-  /* max-width: 80%; */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .font-mono {
@@ -76,22 +74,22 @@ table {
 }
 
 .gap {
-  height: 30px;
+  height: 10px;
 }
 
 #big-footer,
 .text-14 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .text-10 {
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 /* Invoice Styles */
 .invoice {
   font-family: "Work Sans", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 /* Text alignments */
@@ -114,11 +112,11 @@ table tr > th:last-child {
 
 /* table row height */
 td {
-  line-height: 18px;
+  line-height: 1.5;
 }
 
 #details td {
-  line-height: 30px;
+  line-height: 2;
 }
 
 /* horizontal line */
@@ -156,11 +154,70 @@ td {
   margin-bottom: 15px;
 }
 
+/* Footer section */
+footer {
+  width: 100%;
+}
+
 footer table {
   margin-top: 15px;
   padding: 0 0 20px;
 }
 
-footer {
-  width: 100%;
+/* Only for print styles */
+@media print {
+  html {
+    font-size: 10px;
+  }
+
+  section {
+    height: 420px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  header,
+  main,
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
+  /* Fixed the header position to top */
+  header {
+    top: 0;
+  }
+
+  main {
+    top: 70px;
+  }
+
+  /* fixed footer position to the bottom of height 420 px */
+  footer {
+    top: 361.6px;
+  }
+
+  /* Adjast to required fixed height 420px */
+  .gap {
+    height: 5px;
+  }
+
+  /* table row height */
+  td {
+    line-height: 1;
+  }
+
+  #details td {
+    line-height: 1.3;
+  }
+
+  /* horizontal line */
+  .hr {
+    height: 0;
+  }
 }
