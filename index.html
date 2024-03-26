@@ -5,130 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice - Logoipsum - BEMGroup</title>
+    <!-- <link rel="stylesheet" href="styles/styles.css" media="print"> -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/print.css" media="print">
 </head>
 
 <body>
-    <!-- Invoice Header -->
-    <Table>
-        <thead>
-            <tr>
-                <th class="invoice bold" colspan="3">Invoice</th>
-                <th class="vertical-center" colspan="3"><img src="/assets/logoipsum.svg" alt="Logoipsum"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="3" class="bold">Invoice no: <span class="font-mono opacity-70 semibold"> #A1I7701</span>
-                </td>
-                <td colspan="3"></td>
-            </tr>
-            <tr>
-                <td colspan="3" class="bold">Date: <span class="font-mono opacity-70 semibold">January 3, 2023</span>
-                </td>
-                <td colspan="3"></td>
-            </tr>
-            <tr>
-                <td colspan="3" class="bold">Due Date: <span class="font-mono opacity-70 semibold">March 11, 2024</span>
-                </td>
-                <td colspan="3"></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6" class="gap"></td>
-            </tr>
-        </tfoot>
-    </Table>
+    <!-- Header section -->
 
-    <!-- Invoice Account -->
-    <Table>
-        <thead>
-            <tr>
-                <th class="font-mono opacity-70 uppercase" colspan="3">Bill to</th>
-                <th class="font-mono opacity-70 uppercase" colspan="3">Bill from</th>
-            </tr>
-            <tr>
-                <th class="bold capitalise text-14" colspan="3">David Bailey</th>
-                <th class="bold capitalise text-14" colspan="3">ABC Solutions Ltd.</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="3" class="font-mono opacity-70">4517 Washington Ave, <br>
-                    Manchester Kentucky 39495</td>
-                <td colspan="3" class="font-mono opacity-70">4517 Washington Ave. Manchester <br> Kentucky 39495</td>
-            </tr>
-            <tr>
-                <td colspan="3" class="font-mono opacity-70">david@gmail.com</td>
-                <td colspan="3" class="font-mono opacity-70">abc@gmail.com</td>
-            </tr>
-            <tr>
-                <td colspan="3" class="font-mono opacity-90">+62 21 123456</td>
-                <td colspan="3" class="font-mono opacity-90">+62 853 1234 5678</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6" class="gap"></td>
-            </tr>
-        </tfoot>
-    </Table>
+    <header>
+        <Table>
+            <thead>
+                <tr>
+                    <th class="invoice bold" colspan="3">Invoice</th>
+                    <th class="vertical-center" colspan="3"><img src="/assets/logoipsum.svg" alt="Logoipsum"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" class="bold">Invoice no: <span class="font-mono opacity-70 semibold">
+                            #A1I7701</span>
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="bold">Date: <span class="font-mono opacity-70 semibold">January 3,
+                            2023</span>
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="bold">Due Date: <span class="font-mono opacity-70 semibold">March 11,
+                            2024</span>
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6" class="gap"></td>
+                </tr>
+            </tfoot>
+        </Table>
+    </header>
 
-    <!-- Invoice Details -->
-    <Table id="details">
-        <thead>
-            <tr>
-                <th class="semibold capitalise" colspan="2">Item Details</th>
-                <th class="semibold capitalise">Quantity</th>
-                <th class="semibold capitalise">Unit Price</th>
-                <th class="semibold capitalise">Total</th>
-            </tr>
-            <tr>
-                <th colspan="6">
-                    <hr>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                <td>2</td>
-                <td>$200.00</td>
-                <td>$200.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                <td>1</td>
-                <td>$200.00</td>
-                <td>$200.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                <td>2</td>
-                <td>$200.00</td>
-                <td>$200.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                <td>1</td>
-                <td>$200.00</td>
-                <td>$200.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
-                <td>1</td>
-                <td>$200.00</td>
-                <td>$200.00</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6" class="gap"></td>
-            </tr>
-        </tfoot>
-    </Table>
+    <!-- main invoice section -->
+    <main>
+        <!-- Invoice Header [Account] -->
+        <Table>
+            <thead>
+                <tr>
+                    <th class="font-mono opacity-70 uppercase" colspan="3">Bill to</th>
+                    <th class="font-mono opacity-70 uppercase" colspan="3">Bill from</th>
+                </tr>
+                <tr>
+                    <th class="bold capitalise text-14" colspan="3">David Bailey</th>
+                    <th class="bold capitalise text-14" colspan="3">ABC Solutions Ltd.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" class="font-mono opacity-70">4517 Washington Ave, <br>
+                        Manchester Kentucky 39495</td>
+                    <td colspan="3" class="font-mono opacity-70">4517 Washington Ave. Manchester <br> Kentucky 39495
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="font-mono opacity-70">david@gmail.com</td>
+                    <td colspan="3" class="font-mono opacity-70">abc@gmail.com</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="font-mono opacity-90">+62 21 123456</td>
+                    <td colspan="3" class="font-mono opacity-90">+62 853 1234 5678</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6" class="gap"></td>
+                </tr>
+            </tfoot>
+        </Table>
+
+        <!-- Invoice Details -->
+        <Table id="details">
+            <thead>
+                <tr>
+                    <th class="semibold capitalise" colspan="2">Item Details</th>
+                    <th class="semibold capitalise">Quantity</th>
+                    <th class="semibold capitalise">Unit Price</th>
+                    <th class="semibold capitalise">Total</th>
+                </tr>
+                <tr>
+                    <th colspan="6" class="hr">
+                        <hr>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                    <td class="font-mono opacity-70">2</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                </tr>
+                <tr>
+                    <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                    <td class="font-mono opacity-70">1</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                </tr>
+                <tr>
+                    <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                    <td class="font-mono opacity-70">2</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                </tr>
+                <tr>
+                    <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                    <td class="font-mono opacity-70">1</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                </tr>
+                <tr>
+                    <td class="font-mono opacity-70" colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                    <td class="font-mono opacity-70">1</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                    <td class="font-mono opacity-70">$200.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6" class="gap"></td>
+                </tr>
+            </tfoot>
+        </Table>
+
+        <!-- Invoice big footer -->
+        <Table id="big-footer">
+            <thead>
+                <tr>
+                    <th class="bold capitalise" colspan="3">Additional Information</th>
+                    <th class="bold capitalise" colspan="3">Totals</th>
+                </tr>
+                <tr>
+                    <th colspan="6" class="hr">
+                        <hr>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bold capitalise" colspan="3">
+                        Terms & Conditions:
+                    </td>
+                    <td>Subtotal:</td>
+                    <td class="font-mono">$1600.00</td>
+                    <td rowspan="5" class="col-gap">Col gap</td>
+                </tr>
+                <tr>
+                    <td class="semibold text-10" colspan="3">The payment must be made within 30 days.</td>
+                    <td>Tax(5%):</td>
+                    <td class="font-mono">$80.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="text-14 bold">Total:</td>
+                    <td class="font-mono">$1680.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td>Partial Period</td>
+                    <td>3 Months</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td>Each Months</td>
+                    <td class="font-mono">$560.00</td>
+                </tr>
+            </tbody>
+            <tfoot class="font-inter">
+                <tr>
+                    <td colspan="6" class="hr">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="sign"><img src="/assets/sign.svg" alt="sign"></td>
+                    <td colspan="3" class=" bg-blue"><button class="pay-btn uppercase bold">Pay Now $1,680.00</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-blue">Khalid Istiaq</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">UX Designer, BemGroup</td>
+                    <td colspan="3"></td>
+                </tr>
+            </tfoot>
+        </Table>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-blue">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="6" class="hr">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <span class="text-10">Created by</span> <img src="/assets/Logo Kerjho.svg" alt="logo-footer">
+                        <span class="semibold">Invoice us</span>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
 </body>
 
 </html>

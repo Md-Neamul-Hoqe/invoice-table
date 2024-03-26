@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,11 +6,24 @@
   margin: 0;
 }
 
+html {
+  /* height: 792px; */
+  height: 420px !important;
+}
+/* primery color */
+:root {
+  --blue: #053858;
+}
+
 body {
-  height: 792px;
-  /* height: 420px; */
-  padding: 40px 40px 0 40px;
-  border: 1px solid blue;
+  /* change browsers default settings */
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+header,
+main {
+  padding: 0 40px;
 }
 
 html,
@@ -32,6 +45,10 @@ table {
 
 .font-mono {
   font-family: "Fira Mono", monospace;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
 }
 
 .opacity-70 {
@@ -62,8 +79,13 @@ table {
   height: 30px;
 }
 
+#big-footer,
 .text-14 {
   font-size: 14px;
+}
+
+.text-10 {
+  font-size: 10px;
 }
 
 /* Invoice Styles */
@@ -78,16 +100,19 @@ table tr > th {
   text-align: center;
 }
 
+#big-footer tr > td:nth-child(2),
 table tr > td:first-child,
 table tr > th:first-child {
   text-align: left;
 }
 
+#big-footer tr > td:nth-child(3),
 table tr > td:last-child,
 table tr > th:last-child {
   text-align: right;
 }
 
+/* table row height */
 td {
   line-height: 18px;
 }
@@ -95,7 +120,47 @@ td {
 #details td {
   line-height: 30px;
 }
-/* 
-#details > thead th {
-  border-bottom: 1px solid gray;
-} */
+
+/* horizontal line */
+.hr {
+  height: 15px;
+}
+
+/* big footer last column content hidden */
+.col-gap {
+  visibility: hidden;
+}
+
+/* Footer primery color implement */
+.text-blue {
+  color: var(--blue);
+}
+
+.bg-blue * {
+  background-color: var(--blue);
+  color: white;
+  vertical-align: middle;
+}
+
+.pay-btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  border: 0;
+  width: 100%;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+.sign img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+footer table {
+  margin-top: 15px;
+  padding: 0 0 20px;
+}
+
+footer {
+  width: 100%;
+}
