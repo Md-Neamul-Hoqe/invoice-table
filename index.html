@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Logoipsum - BEMGroup</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+</head>
+
+<body>
+    <!-- Invoice Header -->
+    <Table>
+        <thead>
+            <tr>
+                <th class="invoice bold" colspan="3">Invoice</th>
+                <th class="vertical-center" colspan="3"><img src="/assets/logoipsum.svg" alt="Logoipsum"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3" class="bold">Invoice no: <span class="font-mono opacity-70 semibold"> #A1I7701</span>
+                </td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bold">Date: <span class="font-mono opacity-70 semibold">January 3, 2023</span>
+                </td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bold">Due Date: <span class="font-mono opacity-70 semibold">March 11, 2024</span>
+                </td>
+                <td colspan="3"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="gap"></td>
+            </tr>
+        </tfoot>
+    </Table>
+
+    <!-- Invoice Account -->
+    <Table>
+        <thead>
+            <tr>
+                <th class="font-mono opacity-70 uppercase" colspan="3">Bill to</th>
+                <th class="font-mono opacity-70 uppercase" colspan="3">Bill from</th>
+            </tr>
+            <tr>
+                <th class="bold capitalise text-14" colspan="3">David Bailey</th>
+                <th class="bold capitalise text-14" colspan="3">ABC Solutions Ltd.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3" class="font-mono opacity-70">4517 Washington Ave, <br>
+                    Manchester Kentucky 39495</td>
+                <td colspan="3" class="font-mono opacity-70">4517 Washington Ave. Manchester <br> Kentucky 39495</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="font-mono opacity-70">david@gmail.com</td>
+                <td colspan="3" class="font-mono opacity-70">abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="font-mono opacity-90">+62 21 123456</td>
+                <td colspan="3" class="font-mono opacity-90">+62 853 1234 5678</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="gap"></td>
+            </tr>
+        </tfoot>
+    </Table>
+
+    <!-- Invoice Details -->
+    <Table id="details">
+        <thead>
+            <tr>
+                <th class="semibold capitalise" colspan="2">Item Details</th>
+                <th class="semibold capitalise">Quantity</th>
+                <th class="semibold capitalise">Unit Price</th>
+                <th class="semibold capitalise">Total</th>
+            </tr>
+            <tr>
+                <th colspan="6">
+                    <hr>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                <td>2</td>
+                <td>$200.00</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                <td>1</td>
+                <td>$200.00</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                <td>2</td>
+                <td>$200.00</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                <td>1</td>
+                <td>$200.00</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">Galaxy Tab S6 Lite - 2022 Edition</td>
+                <td>1</td>
+                <td>$200.00</td>
+                <td>$200.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="gap"></td>
+            </tr>
+        </tfoot>
+    </Table>
+</body>
+
+</html>
